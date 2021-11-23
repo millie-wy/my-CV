@@ -3,6 +3,7 @@
 .flex-row { flex-direction: row; }
 .justify-c { justify-content: center; }
 .text-c { text-align: center;}
+.absolute { position: absolute; }
 
 * { box-sizing: border-box;
     margin: 0 }
@@ -13,13 +14,15 @@ html { font-family: 'Oxygen', sans-serif; }
     position: relative;
     overflow-y: hidden;
 }
-
+.hello {
+    background-color: rgb(108, 168, 202);
+}
 .bg {
     width: 100%;
     opacity: 0.75;
     margin-top: -20px;
     margin-bottom: -50px;
-    z-index: -2;
+    z-index: -99;
 }
 
 #about-me {
@@ -28,30 +31,30 @@ html { font-family: 'Oxygen', sans-serif; }
 }
 
 .credit {
-    position: absolute;
     bottom: 0.2rem;
     left: 0.2rem;
     font-size: 0.4rem;
     opacity: 0.5;
     color: white;
-
 }
+
 header {
-    position: fixed; 
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     font-weight: 700;
     min-height: 3rem;
     align-items: center;
-    opacity: 1;
-    z-index: 1;
-    background-color:  rgb(79, 142, 172);
+    z-index: 99;
+    background-color:  transparent;
+    transition: all 0.5s;
 }
 
 header > a {
-    margin: 0 1rem 0 1rem;
-    color: white;
+    padding: 0.5rem 1rem;
+    color: #3c3c3c;
+    border-radius: 0.5rem;
 }
 
 .hamburger-m {
@@ -59,4 +62,18 @@ header > a {
 }
 
 a { text-decoration: none; }
-i { cursor: pointer; }
+i { cursor: pointer; color: #3c3c3c; }
+
+a:hover {
+    background: black;
+}
+
+.intro-pic {
+    width: 12rem;
+    border-radius: 50%;
+    border: 0.3rem solid white;
+    z-index: 1;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+}
