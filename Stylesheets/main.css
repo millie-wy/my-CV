@@ -1,0 +1,31 @@
+#intro {
+    background: rgb(216, 222, 235);
+    border: 0.3rem solid white;
+    border-radius: 2rem;
+    z-index: 1;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    width: 55%;
+    height: 300px;
+}
+
+#intro > p {
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.intro-pic {
+    width: 12rem;
+    border-radius: 50%;
+    border: 0.3rem solid white;
+    z-index: 1;
+    left: 50%;
+    top: -30%;
+    transform: translateX(-50%);
+}
+
+#about-me {
+    background-color: yellow;
+    height: 1000px;
+}

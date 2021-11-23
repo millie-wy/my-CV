@@ -1,0 +1,15 @@
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.justify-c { justify-content: center; }
+.text-c { text-align: center;}
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+* { box-sizing: border-box; margin: 0 }
+html { font-family: 'Oxygen', sans-serif; }
+
+
+a { text-decoration: none; }
+i { cursor: pointer; color: #3c3c3c; }
+a:hover { background: black; }
