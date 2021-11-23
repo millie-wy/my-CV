@@ -7,7 +7,7 @@
 .relative { position: relative; }
 
 * { box-sizing: border-box; margin: 0 }
-html { font-family: 'Oxygen', sans-serif; }
+html { font-family: 'Oxygen', sans-serif; overflow-y: scroll;}
 
 
 a { text-decoration: none; }

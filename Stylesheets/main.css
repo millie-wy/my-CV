@@ -1,31 +1,68 @@
-#intro {
-    background: rgb(216, 222, 235);
-    border: 0.3rem solid white;
-    border-radius: 2rem;
-    z-index: 1;
-    left: 50%;
-    top: 30%;
-    transform: translateX(-50%);
-    width: 55%;
-    height: 300px;
+#home { overflow-y: hidden; overflow-x: hidden;}
+.bg {
+    width: 100%;
+    opacity: 0.75;
+    margin-top: -20px;
+    margin-bottom: -50px;
+    z-index: -99;
 }
 
-#intro > p {
-    font-size: 1.5rem;
-    padding: 1rem;
+.credit {
+    opacity: 0.6;
+    bottom: 2px;
+    left: 2px;
+    font-size: 0.5rem;
+    color: white;
+    z-index: 1;
 }
+
+#intro {
+    background: rgba(255,255,255,0.4);
+    border: 0.3rem solid rgb(60,60,60);
+    border-radius: 1rem;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 15rem;
+    width: 55%;
+    min-height: 200px;
+    text-align: center;
+}
+
+#intro > h1 {
+    font-size: 1.5rem;
+    padding: 4.5rem 1rem 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+#intro > p { padding: 0rem 1rem 0.5rem 1rem; }
+#intro > i { padding: 0rem 0.5rem 1rem 0.5rem; }
 
 .intro-pic {
     width: 12rem;
     border-radius: 50%;
-    border: 0.3rem solid white;
+    border: 0.3rem solid rgb(60, 60, 60);;
     z-index: 1;
     left: 50%;
-    top: -30%;
+    top: -8rem;
     transform: translateX(-50%);
 }
 
 #about-me {
     background-color: yellow;
+    z-index: 2;
     height: 1000px;
+}
+
+
+@media (max-width: 600px) {
+    .bg {
+        height: 80vh;
+        width: auto;
+        object-fit: cover;
+    }
+
+    #intro {
+        width: 90%;
+    }
 }
