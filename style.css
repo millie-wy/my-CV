@@ -1,0 +1,62 @@
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.justify-c { justify-content: center; }
+.text-c { text-align: center;}
+
+* { box-sizing: border-box;
+    margin: 0 }
+
+html { font-family: 'Oxygen', sans-serif; }
+
+#home {
+    position: relative;
+    overflow-y: hidden;
+}
+
+.bg {
+    width: 100%;
+    opacity: 0.75;
+    margin-top: -20px;
+    margin-bottom: -50px;
+    z-index: -2;
+}
+
+#about-me {
+    background-color: yellow;
+    height: 1000px;
+}
+
+.credit {
+    position: absolute;
+    bottom: 0.2rem;
+    left: 0.2rem;
+    font-size: 0.4rem;
+    opacity: 0.5;
+    color: white;
+
+}
+header {
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0;
+    font-weight: 700;
+    min-height: 3rem;
+    align-items: center;
+    opacity: 1;
+    z-index: 1;
+    background-color:  rgb(79, 142, 172);
+}
+
+header > a {
+    margin: 0 1rem 0 1rem;
+    color: white;
+}
+
+.hamburger-m {
+    display: none;
+}
+
+a { text-decoration: none; }
+i { cursor: pointer; }
