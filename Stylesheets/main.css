@@ -22,11 +22,12 @@
     border-radius: 1rem;
     z-index: 1;
     left: 50%;
-    transform: translateX(-50%);
     top: 15rem;
+    transform: translateX(-50%);
     width: 55%;
     min-height: 200px;
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 #intro > h1 {
@@ -35,13 +36,14 @@
     text-transform: uppercase;
 }
 
-#intro > p { padding: 0rem 1rem 0.5rem 1rem; }
-#intro > i { padding: 0rem 0.5rem 1rem 0.5rem; }
+#intro > p { padding: 0rem 1rem 1rem 1rem; }
+#intro > a { padding: 0rem 0.8rem 0rem 0.8rem; }
 
 .intro-pic {
     width: 12rem;
     border-radius: 50%;
-    border: 0.3rem solid rgb(60, 60, 60);;
+    background-color: rgb(60,60,60);
+    border: 0.3rem solid rgb(60, 60, 60);
     z-index: 1;
     left: 50%;
     top: -8rem;
@@ -62,7 +64,14 @@
         object-fit: cover;
     }
 
-    #intro {
-        width: 90%;
+    #intro { 
+        width: 90%; 
+        top: 13rem; 
     }
+
+    #intro > a { 
+        padding: 1rem; 
+        font-size: 1.5rem;
+    }
+
 }

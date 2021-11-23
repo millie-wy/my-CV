@@ -7,7 +7,10 @@
 .relative { position: relative; }
 
 * { box-sizing: border-box; margin: 0 }
-html { font-family: 'Oxygen', sans-serif; overflow-y: scroll;}
+html { font-family: 'Oxygen', sans-serif; 
+    overflow-y: scroll;
+    color: #3c3c3c;
+}
 
 
 a { text-decoration: none; }
