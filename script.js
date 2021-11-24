@@ -1,6 +1,11 @@
+window.addEventListener('scroll', onScroll);
 
+function onScroll() {
+    updateHeaderColor();
+    updatePlanePosition();
+}
 
-window.onscroll = function() {
+function updateHeaderColor() {
     let header = document.getElementById('header');
     let headerLinks = header.querySelectorAll('.header-links')
     let top = window.scrollY;
@@ -17,16 +22,14 @@ window.onscroll = function() {
     } 
 }
 
-const container = document.getElementById('plane');
-const windowHeight = window.innerHeight;
-const windowWidth = window.innerWidth;
-const scrollArea = 2800 - windowHeight;
+function updatePlanePosition() {
+    const bg = document.getElementById('section-home');
+    const scrollPercent = Math.min(1, window.scrollY / bg.clientHeight);
+    const planeBg = document.getElementById('plane');
+    const planePic = document.getElementById('plane-pic');
+    let marginPlane = scrollPercent * (planeBg.clientWidth - planePic.clientWidth);
+    planePic.style.marginLeft = marginPlane + 'px';
+}
 
-window.addEventListener('scroll', function() {
-    const scrollTop = window.pageYOffset || window.scrollTop;
-    const scrollPercent = scrollTop/scrollArea || 0;
-    const plane = document.getElementsByClassName('plane-pic')[0];
 
-    plane.style.marginLeft = scrollPercent*window.innerWidth + 'px';
-});
 

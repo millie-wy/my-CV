@@ -87,8 +87,8 @@ h2 {
     width: 100%;
     overflow-x: hidden;
     box-sizing: border-box;
+    text-align:start;
 }
-
 
 /* Extra large devices 1200px and up */
 @media (min-width: 1200px) {

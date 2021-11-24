@@ -19,4 +19,4 @@ a { text-decoration: none; }
 i { cursor: pointer; color: #3c3c3c; }
 i:hover { color: rgb(108, 168, 202); }
 header i:hover { color: white; }
-header a:hover { background-color: rgb(137, 185, 212); }
+header a:hover { background-color: rgba(137, 184, 212, 0.377); }
