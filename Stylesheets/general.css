@@ -7,12 +7,15 @@
 .relative { position: relative; }
 
 * { box-sizing: border-box; margin: 0 }
+
 html { font-family: 'Oxygen', sans-serif; 
     overflow-y: scroll;
     color: #3c3c3c;
+    scroll-behavior: smooth;
 }
 
 
 a { text-decoration: none; }
 i { cursor: pointer; color: #3c3c3c; }
-a:hover { background: black; }
+i:hover { color: rgb(108, 168, 202); }
+header a:hover { background-color: rgb(137, 185, 212); }
