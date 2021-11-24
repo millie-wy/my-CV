@@ -52,13 +52,41 @@
 
 #intro > p { padding: 0rem 1rem 1rem 1rem; }
 #intro > a { padding: 0rem 0.8rem 0rem 0.8rem; }
-h2 { font-family: 'Cabin Sketch', cursive; font-size: 2rem; }
 
-#about-me {
+h2 { 
+    font-family: 'Cabin Sketch', cursive; 
+    font-size: 2rem; 
+    padding: 2rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+#section-about {
+    background-color: rgb(236, 241, 245);
+    min-height: 30rem;
+    padding: 0 4rem 0 4rem;
+}
+
+.plane-flying {
+    align-items: center;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+    padding: 0 1rem 0 1rem;
     background-color: whitesmoke;
-    z-index: 2;
-    height: 1000px;
-    display: none;
+    border-radius: 0.3rem 2rem 0.3rem 2rem;
+    box-shadow:  rgb(137, 185, 212) 0px 0px 20px -10px;
+}
+
+.flags {
+     font-size: 3.5rem;
+     width: 58px;
+ }
+
+#plane {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 
@@ -88,6 +116,10 @@ h2 { font-family: 'Cabin Sketch', cursive; font-size: 2rem; }
         font-size: 1.5rem;
     }
 
+    #section-about {
+        padding: 0 3rem 0 3rem;
+    }
+
 }
 
 /* Extra small devices 600px and below */
@@ -107,4 +139,7 @@ h2 { font-family: 'Cabin Sketch', cursive; font-size: 2rem; }
         font-size: 1.5rem;
     }
 
+    #section-about {
+        padding: 0 2rem 0 2rem;
+    }
 }

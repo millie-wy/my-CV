@@ -16,3 +16,17 @@ window.onscroll = function() {
         }
     } 
 }
+
+const container = document.getElementById('plane');
+const windowHeight = window.innerHeight;
+const windowWidth = window.innerWidth;
+const scrollArea = 2800 - windowHeight;
+
+window.addEventListener('scroll', function() {
+    const scrollTop = window.pageYOffset || window.scrollTop;
+    const scrollPercent = scrollTop/scrollArea || 0;
+    const plane = document.getElementsByClassName('plane-pic')[0];
+
+    plane.style.marginLeft = scrollPercent*window.innerWidth + 'px';
+});
+
