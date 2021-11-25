@@ -1,4 +1,5 @@
 window.addEventListener('scroll', onScroll);
+window.addEventListener('click', unhideText);
 
 function onScroll() {
     updateHeaderColor();
@@ -31,5 +32,30 @@ function updatePlanePosition() {
     planePic.style.marginLeft = marginPlane + 'px';
 }
 
+// function unhideText() {
+//     let dots = document.querySelectorAll('.dots');
+//     let moreText = document.querySelectorAll('.more2');
+//     let readMoreButton = document.getElementById('readmore1');
 
+//     if (dots.style.display === "none") {
+//         dots.style.display = "inline";
+//         moreText.style.display = "none";
+//     } else {
+//         dots.style.display = "none";
+//         moreText.style.display = "inline"    
+//     }
+// }
+
+
+let noOfCharac = 100;
+let descriptions = document.querySelectorAll('.portfo-description');
+descriptions.forEach(description => {
+    if (description.textContent.length < noOfCharac) {
+        description.nextElementSibling.style.display = "none";
+    } else {
+        let displayText = description.textContent.slice(0,noOfCharac);
+        let moreText = description.textContent.slice(noOfCharac);
+        description.innerHTML = "hello";
+    }
+});
 

@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Millie Cheung | Front-end Developer</title>
+    <link rel="icon" href="/Media/Images/m-tab.webp">
     
     <script src="https://kit.fontawesome.com/3809b5d93c.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="/Stylesheets/general.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/Stylesheets/general.css">
     <link rel="stylesheet" href="/Stylesheets/header.css">
     <link rel="stylesheet" href="/Stylesheets/main.css">
     <link rel="stylesheet" href="/Stylesheets/footer.css">
-    <script src="script.js"></script>   
+    
+    <script src="script.js"></script>
 </head>
 <body>
     <header id="header" class="flex justify-c text-c">
@@ -21,17 +24,17 @@
         <ul class="flex-row flex">
             <li class="header-links"><a href="#home">HOME</a></li>
             <li class="header-links"><a href="#section-about">ABOUT</a></li>
-            <li class="header-links"><a href="#section-resume">PORTFOLIO</a></li>
+            <li class="header-links"><a href="#section-portfolio">PORTFOLIO</a></li>
             <li class="header-links"><a href="#section-contact">CONTACT</a></li>
         </ul>
     </header>
 
-    <section id="section-home">
+    <section id="section-home" class="scroll-mt-2">
         <div id="home" class="relative">
-            <img class="bg" src="/Images/bg.hk-1.webp" alt="background-hk">
+            <img class="bg" src="/Media/Images/bg.hk-1.webp" alt="background-hk">
             <p class="credit absolute">Photo by Soda North from Pexels</p>
             <div id="intro" class="absolute">
-                <img class="intro-pic absolute" src="/Images/millie.jpeg" alt="my photo">
+                <img class="intro-pic absolute" src="/Media/Images/millie.jpeg" alt="my photo">
                 <h1>Millie Cheung</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui rerum optio id ad cupiditate quis sed iste quisquam, accusamus nostrum! Eius, culpa nostrum. Aperiam molestias dolores eligendi ab nostrum earum.</p>
                 <a target=_blank href="https://www.linkedin.com/in/milliecheung/"><i class="fab fa-linkedin-in"></i></a>
@@ -42,12 +45,12 @@
         </div>
     </section>
 
-    <section id="section-about" class="text-c">
+    <section id="section-about" class="scroll-mt-2 text-c">
         <h2 id="session-headers">ABOUT ME</h2>
         <div class="plane-flying flex flex-row justify-c">
             <div class="flags">🇭🇰</div>
             <div id="plane">
-                <img id="plane-pic" src="/Images/plane.webp" alt="plane" height="40px">
+                <img id="plane-pic" src="/Media/Images/plane.webp" alt="plane" height="40px">
             </div>
             <div class="flags">🇸🇪</div>
         </div>
@@ -55,19 +58,48 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos est, earum eveniet maxime doloremque, libero praesentium harum laudantium, voluptatibus blanditiis tempore numquam dolore totam modi! Ipsa dolor vitae aspernatur. Temporibus.</p>
     </section>
 
-    <section id="section-portfolio">
-        <div id="portfolio">
-             <h2 id="session-headers">MY PORTFOLIO</h2>
-
-             <p></p>
-        </div>
+    <section id="section-portfolio" class="scroll-mt-2">
+            <h2 id="session-headers">MY PORTFOLIO</h2>
+            <div id="portfo-cards" class="flex">
+                <div class="card text-c">
+                    <video width="250" autoplay loop muted playsinline>
+                        <source src="/Media/Videos/bank-robbery-adventure.webm" type="video/webm">
+                        <source src="/Media/Videos/bank-robbery-adventure.mp4" type="video/mp4">
+                        Your browser does not support the audio element.
+                    </video>
+                    <div class="portfo-card-body flex flex-col text-c">
+                        <h4 class="portfo-header">Minigame: Bank Robbery Adventure</h4>
+                        <p class="portfo-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo sunt iure <span class="dots">...</span><span class="more">itaque magnam dolores nihil maxime dolore veniam velit, nulla pariatur! Sed error ea corporis fugiat. Sint odit dicta numquam.</span></p>
+                        <button class="readmore">Read more <i class="fas fa-angle-down"></i></button>
+                        <button class="portfo-button">Visit  <i class="portfo-icons fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <div class="card text-c">
+                    <div class="coming-soon flex flex-col justify-c">
+                        Coming soon...
+                    </div>
+                    <div class="portfo-card-body flex flex-col text-c">
+                        <h4 class="portfo-header">Coming soon...</h4>
+                        <p class="portfo-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste maiores magnam atque, rerum est vitae odit quasi, adipisci laboriosam iure fugit quia id itaque architecto minima similique quae repudiandae possimus.</p>
+                        <button class="portfo-button">Visit  <i class="portfo-icons fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <div class="card text-c">
+                    <div class="coming-soon flex flex-col justify-c">
+                        Coming soon...
+                    </div>
+                    <div class="portfo-card-body flex flex-col text-c">
+                        <h4 class="portfo-header">Coming soon...</h4>
+                        <p class="portfo-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto atque, ex ratione neque culpa sunt sequi illum beatae aspernatur mollitia iste at blanditiis saepe quidem sit expedita eos, quaerat ea?</p>
+                        <button class="portfo-button">Visit  <i class="portfo-icons fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+            </div>
     </section>
 
     <section id="section-contact">
-        <div id="contact">
              <h2 id="session-headers">CONTACT ME</h2>
-             <p></p>
-        </div>
+
     </section>
     <footer>Millie Cheung &#169; 2021. All rights reserved.</footer>
 </body>
