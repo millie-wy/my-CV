@@ -11,17 +11,14 @@ header {
     transition: all 0.5s;
 }
 
-header ul li {
-    list-style-type: none;
-}
+header ul li { list-style-type: none; }
 
 header ul li > a {
     padding: 0.5rem 1rem;
-    color: #3c3c3c;
     border-radius: 0.5rem;
 }
 
-.hamburger-m {
+#hamburger-m {
     display: none;
     font-size: 1.5rem;
 }
@@ -29,7 +26,7 @@ header ul li > a {
 
 @media (max-width: 600px) {
     .header-links { display: none; }
-    .hamburger-m {display: unset; }
+    #hamburger-m {display: unset; }
 
     #header {
         justify-content: flex-start;

@@ -18,14 +18,17 @@ function addEventListeners() { ///
 function updateHeaderColor() {
     let header = document.getElementById('header');
     let headerLinks = header.querySelectorAll('.header-links')
+    let hamburgerMenu = header.querySelector('#hamburger-m')
     let top = window.scrollY;
     if (top >= 115) {
         header.style.background = "rgb(108, 168, 202)";
+        hamburgerMenu.style.color = "white";
         for (let item of headerLinks) {
             item.children[0].style.color = "white";
         }
     } else {
         header.style.background = "";
+        hamburgerMenu.style.color = "#3c3c3c";
         for (let item of headerLinks) {
             item.children[0].style.color = "#3c3c3c";
         }

@@ -1,4 +1,6 @@
 footer {
     font-size: 0.8rem;
     text-align: center;
+    background-color: rgb(236, 241, 245);
+    padding-bottom: 0.5rem;
 }
