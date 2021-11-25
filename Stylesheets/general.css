@@ -5,6 +5,7 @@
 .text-c { text-align: center;}
 .absolute { position: absolute; }
 .relative { position: relative; }
+.scroll-mt-2 { scroll-margin-top: 2rem; }
 
 * { box-sizing: border-box; margin: 0 }
 
@@ -16,7 +17,10 @@ html { font-family: 'Oxygen', sans-serif;
 
 
 a { text-decoration: none; }
-i { cursor: pointer; color: #3c3c3c; }
+i, button { cursor: pointer; color: #3c3c3c; }
 i:hover { color: rgb(108, 168, 202); }
 header i:hover { color: white; }
 header a:hover { background-color: rgba(137, 184, 212, 0.377); }
+
+.invisible { display: none; }
+.visible { display: inline; }
