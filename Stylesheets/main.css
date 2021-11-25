@@ -157,7 +157,7 @@ video {
     display: none;
 }
 
-#readmore, #readmore i {
+.readmore-button, .readmore-button i {
     margin-top: 0.3rem;
     background: none;
     border: none;
