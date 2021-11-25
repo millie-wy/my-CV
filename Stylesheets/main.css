@@ -1,4 +1,4 @@
-#home { overflow-y: hidden; overflow-x: hidden;}
+#home { overflow: hidden;}
 
 .bg {
     width: 100%;
@@ -92,10 +92,14 @@ h2 {
 
 /* Extra large devices 1200px and up */
 @media (min-width: 1200px) {
-    .bg {
-        height: 50rem;
+    #section-home {
+        overflow-y: hidden;
+        height: 42rem
     }
 
+    #intro { 
+        top: 18rem; 
+    }
 }
 
 /* Small to medium devices 768px and below but no less than 600px */
