@@ -23,10 +23,11 @@ function addEventListeners() {
 
 function updateHeaderColor() {
     let header = document.getElementById('header');
+    let toggleMenu = document.getElementById('toggle-menu');
     let headerLinks = header.querySelectorAll('.header-links')
     let hamburgerMenu = header.querySelector('#hamburger-m')
     let top = window.scrollY;
-    if (top >= 115) {
+    if (top >= 115 || toggleMenu.style.height === "15rem") {
         header.style.background = "rgb(108, 168, 202)";
         hamburgerMenu.style.color = "white";
         for (let item of headerLinks) {
@@ -39,6 +40,22 @@ function updateHeaderColor() {
             item.children[0].style.color = "#3c3c3c";
         }
     } 
+}
+
+function toggleMenu() {
+    console.log('clicked!')
+    let toggleMenu = document.getElementById('toggle-menu');
+    let toggleMenuList = document.getElementById('toggle-menu-list');
+    let menuBtn = document.getElementById('hamburger-m');
+    if (toggleMenu.style.height === "0%") {
+        toggleMenu.style.height = "15rem";
+        toggleMenuList.classList = "flex-col flex";
+        menuBtn.classList = "absolute fas fa-times";
+    } else {
+        toggleMenu.style.height = "0%";
+        toggleMenuList.classList = "none";
+        menuBtn.classList = "absolute fas fa-bars";
+    }
 }
 
 function updatePlanePosition() {
@@ -85,23 +102,5 @@ function toggleDescription(event) {
         textToHide.classList.add('invisible');
         dots.classList.remove('invisible');
         readBtn.textContent = 'Read more ⇩';
-    }
-}
-
-function toggleMenu() {
-    console.log('clicked!')
-    let header = document.getElementById('header');
-    let toggleMenu = document.getElementById('toggle-menu');
-    let toggleMenuList = document.getElementById('toggle-menu-list');
-    let menuBtn = document.querySelector('hamburger-m');
-    console.log('this is:' + menuBtn)
-    if (toggleMenu.style.height === "0%") {
-        header.style.background = "rgba(108, 168, 202, 0.8)";
-        toggleMenu.style.height = "15rem";
-        toggleMenuList.style.display = "flex";
-    } else {
-        header.style.background = "";
-        toggleMenu.style.height = "0%";
-        toggleMenuList.style.display = "none";
     }
 }
