@@ -20,7 +20,7 @@ a { text-decoration: none; }
 i, button { cursor: pointer; color: #3c3c3c; }
 i:hover { color: rgb(108, 168, 202); }
 header i:hover { color: white; }
-header a:hover { background-color: rgba(137, 184, 212, 0.377); }
+#toggle-menu a:hover, header a:hover { background-color: rgba(137, 184, 212, 0.377); }
 
 .invisible { display: none; }
 .visible { display: inline; }

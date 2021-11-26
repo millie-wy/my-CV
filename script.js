@@ -16,6 +16,9 @@ function addEventListeners() {
     readBtns.forEach(readBtn => {
         readBtn.addEventListener('click', toggleDescription);
     });
+
+    const menuBtn = document.getElementById('hamburger-m');
+    menuBtn.onclick = toggleMenu;
 }
 
 function updateHeaderColor() {
@@ -82,5 +85,23 @@ function toggleDescription(event) {
         textToHide.classList.add('invisible');
         dots.classList.remove('invisible');
         readBtn.textContent = 'Read more ⇩';
+    }
+}
+
+function toggleMenu() {
+    console.log('clicked!')
+    let header = document.getElementById('header');
+    let toggleMenu = document.getElementById('toggle-menu');
+    let toggleMenuList = document.getElementById('toggle-menu-list');
+    let menuBtn = document.querySelector('hamburger-m');
+    console.log('this is:' + menuBtn)
+    if (toggleMenu.style.height === "0%") {
+        header.style.background = "rgba(108, 168, 202, 0.8)";
+        toggleMenu.style.height = "15rem";
+        toggleMenuList.style.display = "flex";
+    } else {
+        header.style.background = "";
+        toggleMenu.style.height = "0%";
+        toggleMenuList.style.display = "none";
     }
 }

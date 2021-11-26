@@ -20,13 +20,20 @@
 </head>
 <body>
     <header id="header" class="flex justify-c text-c">
-        <i id="hamburger-m" class="fas fa-bars"></i>
-        <ul class="flex-row flex">
+        <i id="hamburger-m" class="absolute fas fa-bars"></i>
+        <ul id="desktop-menu-list" class="flex-row flex">
             <li class="header-links"><a href="#home">HOME</a></li>
             <li class="header-links"><a href="#section-about">ABOUT</a></li>
             <li class="header-links"><a href="#section-portfolio">PORTFOLIO</a></li>
             <li class="header-links"><a href="#section-contact">CONTACT</a></li>
         </ul>
+        <div id="toggle-menu" class="absolute flex flex-col">
+            <ul id="toggle-menu-list" class="flex-col flex">
+                <li class="t-header-links"><a href="#home">HOME</a></li>
+                <li class="t-header-links"><a href="#section-about">ABOUT</a></li>
+                <li class="t-header-links"><a href="#section-portfolio">PORTFOLIO</a></li>
+                <li class="t-header-links"><a href="#section-contact">CONTACT</a></li>
+        </div>
     </header>
 
     <section id="section-home" class="scroll-mt-2">
