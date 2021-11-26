@@ -6,6 +6,7 @@
 .absolute { position: absolute; }
 .relative { position: relative; }
 .scroll-mt-2 { scroll-margin-top: 2rem; }
+.none { display: none; }
 
 * { box-sizing: border-box; margin: 0 }
 
@@ -16,7 +17,7 @@ html { font-family: 'Oxygen', sans-serif;
 }
 
 
-a { text-decoration: none; }
+a { text-decoration: none; color: #3c3c3c; }
 i, button { cursor: pointer; color: #3c3c3c; }
 i:hover { color: rgb(108, 168, 202); }
 header i:hover { color: white; }

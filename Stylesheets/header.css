@@ -25,12 +25,11 @@ header ul li > a {
 }
 
 #toggle-menu {
-    background: rgba(108, 168, 202, 0.8);
+    background: rgba(108, 168, 202);
     border-radius: 0rem 0rem 0.5rem 0.5rem;
     left: 0;
     top: 0;
     right: 0;
-    height: 15rem;
     z-index: 99;
     transition:ease-in-out 0.5s;
 }
