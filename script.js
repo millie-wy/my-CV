@@ -49,7 +49,7 @@ function toggleMenu() {
     let menuBtn = document.getElementById('hamburger-m');
     if (toggleMenu.style.height === "0%") {
         toggleMenu.style.height = "15rem";
-        toggleMenuList.classList = "flex-col flex";
+        setTimeout(function() {toggleMenuList.classList = "flex-col flex"},300);
         menuBtn.classList = "absolute fas fa-times";
     } else {
         toggleMenu.style.height = "0%";
