@@ -29,6 +29,7 @@
         </ul>
         <div id="toggle-menu" class="absolute flex flex-col" style="height: 0%">
             <ul id="toggle-menu-list" class="none">
+                <h3>MILLIE CHEUNG</h3>
                 <li class="t-header-links"><a href="#home">HOME</a></li>
                 <li class="t-header-links"><a href="#section-about">ABOUT</a></li>
                 <li class="t-header-links"><a href="#section-portfolio">PORTFOLIO</a></li>
@@ -111,9 +112,33 @@
             </div>
     </section>
 
-    <section id="section-contact">
-             <h2 id="session-headers">CONTACT ME</h2>
+    <section id="section-contact" class="text-c">
+            <h2 id="session-headers">CONTACT ME</h2>
+            <h4>Send me a message</h4>
+            <form id="contact-form" class="flex flex-col justify-c">
+                <div id="form-name-and-email" class="flex flex-row">
+                    <div class="w-48 flex flex-col">
+                        <label class="form-label" for="name">Name *</label>
+                        <input class="form-input" type="name" id="form-name" name="name" required>
+                    </div>
+                    <div class="w-48 flex flex-col">
+                        <label class="form-label" for="organisation">Organisation</label>
+                        <input class="form-input" type="text" id="form-org" name="organisation">
+                    </div>
+                </div>
+                <label class="form-label"for="email">Email *</label>
+                <input class="form-input" type="email" id="form-email" name="email" required>
+                <label class="form-label" for="subject">Subject *</label>
+                <input class="form-input" type="text" id="form-subject" name="subject" required>
+                <label class="form-label"for="message">Message *</label>
+                <textarea class="form-textarea"  type="text" id="form-message" name="message" rows="4" required></textarea>
+                <input id="send-form-button" type="submit" value="Send">
+            </form>
 
+            <h4>Or get in touch with me on</h4>
+            <a class="contact-icons" target=_blank href="https://www.linkedin.com/in/milliecheung/"><i class="fab fa-linkedin-in"></i></a>
+            <a class="contact-icons" thref="https://github.com/millie-wy"><i class="fab fa-github"></i></a>
+            <a class="contact-icons" thref="https://www.facebook.com/milliecheung/"><i class="fab fa-facebook"></i></a>
     </section>
     <footer>Millie Cheung &#169; 2021. All rights reserved.</footer>
 </body>
