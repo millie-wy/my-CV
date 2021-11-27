@@ -7,6 +7,9 @@
 .relative { position: relative; }
 .scroll-mt-2 { scroll-margin-top: 2rem; }
 .none { display: none; }
+.w-48 { width: 48%;}
+.invisible { display: none; }
+.visible { display: inline; }
 
 * { box-sizing: border-box; margin: 0 }
 
@@ -22,6 +25,4 @@ i, button { cursor: pointer; color: #3c3c3c; }
 i:hover { color: rgb(108, 168, 202); }
 header i:hover { color: white; }
 #toggle-menu a:hover, header a:hover { background-color: rgba(137, 184, 212, 0.377); }
-
-.invisible { display: none; }
-.visible { display: inline; }
+button { font-family: 'Oxygen', sans-serif; }

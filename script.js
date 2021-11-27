@@ -19,6 +19,7 @@ function addEventListeners() {
 
     const menuBtn = document.getElementById('hamburger-m');
     menuBtn.onclick = toggleMenu;
+
 }
 
 function updateHeaderColor() {

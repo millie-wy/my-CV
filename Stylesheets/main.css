@@ -129,10 +129,10 @@ video {
 .portfo-button {
     margin: auto;
     margin-top: 1rem;
-    width: 6rem;
+    width: 4.5rem;
     background: rgb(108, 168, 202);
     border: none;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
     padding: 0.5rem;
     color: white;
     font-size: 0.8rem;
@@ -157,7 +157,7 @@ video {
     display: none;
 }
 
-.readmore-button, .readmore-button i {
+.readmore-button, .readmore-button {
     margin-top: 0.3rem;
     background: none;
     border: none;
@@ -189,20 +189,96 @@ video {
 
 #section-contact {
     background-color: rgb(236, 241, 245);
-    min-height: 30rem;
-    padding: 0 4rem 0 4rem;
 } 
 
+#contact-form {
+    font-size: 0.8rem;
+    width: 60vw;
+    text-align: start;
+    margin: auto;
+}
+
+.form-label {
+    margin: 0.5rem 0 0 0.1rem;
+}
+
+.form-input, .form-textarea {
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: 'Oxygen', sans-serif; 
+    margin-bottom: 0.8rem;
+    resize:vertical;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px solid rgb(53, 136, 184);
+    background-color: transparent;
+    color: rgb(53, 136, 184);
+}
+
+.form-input { height: 2rem;}
+
+input:focus, input:active {
+    outline: none;
+}
+
+#form-name-and-email {
+    justify-content: space-between;
+}
+
+.form-checkbox { width: 20px; }
+.form-disclaimer { width: calc(100% - 20px); }
+
+#send-form-button {
+    font-family: 'Oxygen', sans-serif; 
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 4.5rem;
+    background: rgb(108, 168, 202);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.contact-h4 {
+    margin-bottom: 1rem;
+    font-family: 'Cabin Sketch', cursive; 
+}
+
+.contact-h4 > span {
+    color: rgb(182, 4, 4);
+}
+
+.contact-reminder {
+    margin: auto;
+    font-size: 0.8rem;
+    width: 60vw;
+}
+
+.contact-icons {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#contact-alt {
+    padding-bottom: 3rem;
+}
 
 /* Extra large devices 1200px and up */
 @media (min-width: 1200px) {
     #section-home {
         overflow-y: hidden;
-        height: 42rem
+        height: 42rem;
     }
 
     #intro { 
         top: 18rem; 
+    }
+
+    #contact-form {
+        width: 50vw;
     }
 }
 
@@ -228,6 +304,10 @@ video {
         padding: 0 3rem 3rem 3rem;
     }
 
+    #contact-form {
+        width: 80vw;
+    }
+
 }
 
 /* Extra small devices 600px and below */
@@ -249,5 +329,9 @@ video {
 
     #section-about {
         padding: 0 2rem 4rem 2rem;
+    }
+
+    #contact-form {
+        width: 85vw;
     }
 }
