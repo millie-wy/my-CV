@@ -149,13 +149,8 @@ video {
     font-family: 'Cabin Sketch', cursive; 
 }
 
-.portfo-description {
-    color: #818181;
-}
-
-.more {
-    display: none;
-}
+.portfo-description { color: #818181; }
+.more { display: none; }
 
 .readmore-button, .readmore-button {
     margin-top: 0.3rem;
@@ -187,9 +182,7 @@ video {
 
 /* Section: Contact */
 
-#section-contact {
-    background-color: rgb(236, 241, 245);
-} 
+#section-contact { background-color: rgb(236, 241, 245); } 
 
 #contact-form {
     font-size: 0.8rem;
@@ -198,9 +191,8 @@ video {
     margin: auto;
 }
 
-.form-label {
-    margin: 0.5rem 0 0 0.1rem;
-}
+.form-label { margin: 0.5rem 0 0 0.1rem; }
+.form-input { height: 2rem;}
 
 .form-input, .form-textarea {
     width: 100%;
@@ -215,16 +207,13 @@ video {
     color: rgb(53, 136, 184);
 }
 
-.form-input { height: 2rem;}
-
-input:focus, input:active {
+input:focus, input:active, textarea:focus, textarea.active {
     outline: none;
+    background-color: rgb(240, 244, 248);
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
-#form-name-and-email {
-    justify-content: space-between;
-}
-
+#form-name-and-email { justify-content: space-between; }
 .form-checkbox { width: 20px; }
 .form-disclaimer { width: calc(100% - 20px); }
 
@@ -247,9 +236,7 @@ input:focus, input:active {
     font-family: 'Cabin Sketch', cursive; 
 }
 
-.contact-h4 > span {
-    color: rgb(182, 4, 4);
-}
+.contact-h4 > span { color: rgb(167, 1, 1); }
 
 .contact-reminder {
     margin: auto;
@@ -262,9 +249,7 @@ input:focus, input:active {
     padding: 1rem;
 }
 
-#contact-alt {
-    padding-bottom: 3rem;
-}
+#contact-alt { padding-bottom: 3rem; }
 
 /* Extra large devices 1200px and up */
 @media (min-width: 1200px) {
@@ -273,13 +258,8 @@ input:focus, input:active {
         height: 42rem;
     }
 
-    #intro { 
-        top: 18rem; 
-    }
-
-    #contact-form {
-        width: 50vw;
-    }
+    #intro {  top: 18rem; }
+    #contact-form { width: 50vw; }
 }
 
 /* Small to medium devices 768px and below but no less than 600px */
@@ -300,13 +280,8 @@ input:focus, input:active {
         font-size: 1.5rem;
     }
 
-    #section-about {
-        padding: 0 3rem 3rem 3rem;
-    }
-
-    #contact-form {
-        width: 80vw;
-    }
+    #section-about { padding: 0 3rem 3rem 3rem; }
+    #contact-form { width: 80vw; }
 
 }
 
@@ -327,11 +302,6 @@ input:focus, input:active {
         font-size: 1.5rem;
     }
 
-    #section-about {
-        padding: 0 2rem 4rem 2rem;
-    }
-
-    #contact-form {
-        width: 85vw;
-    }
+    #section-about { padding: 0 2rem 4rem 2rem; }
+    #contact-form { width: 85vw; }
 }

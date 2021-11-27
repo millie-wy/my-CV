@@ -46,14 +46,9 @@ header ul li > a {
     padding: 0;
 }
 
-.t-header-links {
-    color: white;
-}
+/* .t-header-links { color: white; } */
 
-.t-header-links a {
-    color: white;
-
-}
+.t-header-links a { color: white; }
 
 
 @media (max-width: 600px) {

@@ -1,3 +1,20 @@
+* { box-sizing: border-box; margin: 0 }
+
+html { font-family: 'Oxygen', sans-serif; 
+    overflow-y: scroll;
+    color: #3c3c3c;
+    scroll-behavior: smooth;
+}
+
+/* General link, icon/button:hover settings */ 
+a { text-decoration: none; color: #3c3c3c; }
+i, button { cursor: pointer; color: #3c3c3c; }
+i:hover { color: rgb(108, 168, 202); }
+header i:hover { color: white; }
+#toggle-menu a:hover, header a:hover { background-color: rgba(137, 184, 212, 0.377); }
+button { font-family: 'Oxygen', sans-serif; }
+
+/* Reusable classes */
 .flex { display: flex; }
 .flex-col { flex-direction: column; }
 .flex-row { flex-direction: row; }
@@ -10,19 +27,3 @@
 .w-48 { width: 48%;}
 .invisible { display: none; }
 .visible { display: inline; }
-
-* { box-sizing: border-box; margin: 0 }
-
-html { font-family: 'Oxygen', sans-serif; 
-    overflow-y: scroll;
-    color: #3c3c3c;
-    scroll-behavior: smooth;
-}
-
-
-a { text-decoration: none; color: #3c3c3c; }
-i, button { cursor: pointer; color: #3c3c3c; }
-i:hover { color: rgb(108, 168, 202); }
-header i:hover { color: white; }
-#toggle-menu a:hover, header a:hover { background-color: rgba(137, 184, 212, 0.377); }
-button { font-family: 'Oxygen', sans-serif; }

@@ -20,6 +20,10 @@ function addEventListeners() {
     const menuBtn = document.getElementById('hamburger-m');
     menuBtn.onclick = toggleMenu;
 
+    const menuItems = document.querySelectorAll('.t-header-links');
+    menuItems.forEach(menuItem => {
+        menuItem.addEventListener('click', closeToggleMenu);
+    })
 }
 
 function updateHeaderColor() {
@@ -44,7 +48,6 @@ function updateHeaderColor() {
 }
 
 function toggleMenu() {
-    console.log('clicked!')
     let toggleMenu = document.getElementById('toggle-menu');
     let toggleMenuList = document.getElementById('toggle-menu-list');
     let menuBtn = document.getElementById('hamburger-m');
@@ -53,11 +56,19 @@ function toggleMenu() {
         setTimeout(function() {toggleMenuList.classList = "flex-col flex"},300);
         menuBtn.classList = "absolute fas fa-times";
     } else {
-        toggleMenu.style.height = "0%";
-        toggleMenuList.classList = "none";
-        menuBtn.classList = "absolute fas fa-bars";
+        closeToggleMenu();
     }
 }
+
+function closeToggleMenu() {
+    let toggleMenu = document.getElementById('toggle-menu');
+    let toggleMenuList = document.getElementById('toggle-menu-list');
+    let menuBtn = document.getElementById('hamburger-m');
+    toggleMenu.style.height = "0%";
+    toggleMenuList.classList = "none";
+    menuBtn.classList = "absolute fas fa-bars";
+}
+
 
 function updatePlanePosition() {
     const bg = document.getElementById('section-home');
