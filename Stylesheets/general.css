@@ -1,6 +1,6 @@
 * { box-sizing: border-box; margin: 0 }
 
-html { font-family: 'Oxygen', sans-serif; 
+html { font-family: 'Cabin', sans-serif;
     overflow-y: scroll;
     color: #3c3c3c;
     scroll-behavior: smooth;
@@ -12,7 +12,7 @@ i, button { cursor: pointer; color: #3c3c3c; }
 i:hover { color: rgb(108, 168, 202); }
 header i:hover { color: white; }
 #toggle-menu a:hover, header a:hover { background-color: rgba(137, 184, 212, 0.377); }
-button { font-family: 'Oxygen', sans-serif; }
+button { font-family: 'Cabin Condensed', sans-serif; }
 
 /* Reusable classes */
 .flex { display: flex; }

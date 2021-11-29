@@ -197,7 +197,7 @@ video {
 .form-input, .form-textarea {
     width: 100%;
     font-size: 0.8rem;
-    font-family: 'Oxygen', sans-serif; 
+    font-family: 'Cabin', sans-serif;
     margin-bottom: 0.8rem;
     resize:vertical;
     border: none;
@@ -218,7 +218,7 @@ input:focus, input:active, textarea:focus, textarea.active {
 .form-disclaimer { width: calc(100% - 20px); }
 
 #send-form-button {
-    font-family: 'Oxygen', sans-serif; 
+    font-family: 'Cabin Condensed', sans-serif;
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 2rem;
