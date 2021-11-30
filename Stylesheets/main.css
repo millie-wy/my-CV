@@ -155,8 +155,13 @@ video {
     font-family: 'Cabin Sketch', cursive; 
 }
 
-.portfo-description { color: #818181; }
+.portfo-description { 
+    color: #818181;
+    font-size: 0.9rem; 
+}
+
 .more { display: none; }
+.button-hidden { display: none; }
 
 .readmore-button, .readmore-button {
     margin-top: 0.3rem;
@@ -169,11 +174,12 @@ video {
     margin: auto;
     width: 80%;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 #request-resume > h4 {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: rgb(34, 94, 129);
     display: inline-block;
     position: relative;
@@ -191,7 +197,7 @@ video {
 #section-contact { background-color: rgb(236, 241, 245); } 
 
 #contact-form {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     width: 60vw;
     text-align: start;
     margin: auto;
