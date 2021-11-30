@@ -48,6 +48,7 @@
     left: 50%;
     top: -8rem;
     transform: translateX(-50%);
+    pointer-events: none;
 }
 
 #intro > p { padding: 0rem 1rem 1rem 1rem; }
