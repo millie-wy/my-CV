@@ -25,5 +25,4 @@ button { font-family: 'Cabin Condensed', sans-serif; }
 .scroll-mt-2 { scroll-margin-top: 2rem; }
 .none { display: none; }
 .w-48 { width: 48%;}
-.invisible { display: none; }
-.visible { display: inline; }
+.cabin-sketch { font-family: 'Cabin Sketch', cursive; }

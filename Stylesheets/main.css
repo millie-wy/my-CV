@@ -54,7 +54,7 @@
 #intro > p { padding: 0rem 1rem 1rem 1rem; }
 #intro > a { padding: 0rem 0.8rem 0rem 0.8rem; }
 
-.fed-student {
+.blue-text {
     font-weight: 700;
     color: rgb(47, 119, 161);
 }
@@ -70,8 +70,7 @@ h2 {
 
 #section-about {
     background-color: rgb(236, 241, 245);
-    min-height: 30rem;
-    padding: 0 4rem 0 4rem;
+    padding: 0 4rem 4rem 4rem;
 }
 
 .plane-flying {
@@ -97,6 +96,14 @@ h2 {
     box-sizing: border-box;
     text-align: start;
 }
+
+.self-intro-all {
+    margin: auto;
+    width: 75%;
+
+}
+
+.self-intro-line { line-height: 1.5rem; }
 
 /* Section: portfolio */
 
@@ -270,6 +277,7 @@ input:focus, input:active, textarea:focus, textarea.active {
         height: 42rem;
     }
 
+    .self-intro-all { width: 65%; }
     #intro {  top: 18rem; }
     #contact-form { width: 50vw; }
 }
@@ -292,6 +300,7 @@ input:focus, input:active, textarea:focus, textarea.active {
         font-size: 1.5rem;
     }
 
+    .self-intro-all { width: 85%; }
     #section-about { padding: 0 3rem 3rem 3rem; }
     #contact-form { width: 80vw; }
 
@@ -314,6 +323,7 @@ input:focus, input:active, textarea:focus, textarea.active {
         font-size: 1.5rem;
     }
 
+    .self-intro-all { width: 90%; }
     #section-about { padding: 0 2rem 4rem 2rem; }
     #contact-form { width: 85vw; }
 }

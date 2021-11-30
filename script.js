@@ -91,7 +91,7 @@ function shortenDescriptions() {
         } else {
             let displayText = description.textContent.slice(0,noOfCharac); // not to use innerHTML so it doesnt show html tags
             let moreText = description.textContent.slice(noOfCharac);
-            description.innerHTML = displayText + '<span class="dots">...</span><span class="moretext invisible">' + moreText + '</span>';
+            description.innerHTML = displayText + '<span class="dots">...</span><span class="moretext none">' + moreText + '</span>';
         }
     })
 }
@@ -106,13 +106,13 @@ function toggleDescription(event) {
     let textToHide = cardBody.getElementsByClassName('moretext').item(0);
     let dots = cardBody.getElementsByClassName('dots').item(0);
     
-    if (textToHide.classList.contains('invisible')) {
-        textToHide.classList.remove('invisible');
-        dots.classList.add('invisible');
+    if (textToHide.classList.contains('none')) {
+        textToHide.classList.remove('none');
+        dots.classList.add('none');
         readBtn.textContent = 'Read less ⇧';
     } else {
-        textToHide.classList.add('invisible');
-        dots.classList.remove('invisible');
+        textToHide.classList.add('none');
+        dots.classList.remove('none');
         readBtn.textContent = 'Read more ⇩';
     }
 }
