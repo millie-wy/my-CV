@@ -1,0 +1,68 @@
+#section-contact { background-color: rgb(236, 241, 245); } 
+
+#contact-form {
+    font-size: 0.9rem;
+    width: 60vw;
+    text-align: start;
+    margin: auto;
+}
+
+.form-label { margin: 0.5rem 0 0 0.1rem; }
+.form-input { height: 2rem;}
+
+.form-input, .form-textarea {
+    width: 100%;
+    font-size: 0.8rem;
+    font-family: 'Cabin', sans-serif;
+    margin-bottom: 0.8rem;
+    resize:vertical;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1.5px solid rgb(53, 136, 184);
+    background-color: transparent;
+    color: rgb(53, 136, 184);
+}
+
+input:focus, input:active, textarea:focus, textarea.active {
+    outline: none;
+    background-color: rgb(240, 244, 248);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#form-name-and-email { justify-content: space-between; }
+.form-checkbox { width: 20px; }
+.form-disclaimer { width: calc(100% - 20px); }
+
+#send-form-button {
+    font-family: 'Cabin Condensed', sans-serif;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 4.5rem;
+    background: rgb(108, 168, 202);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.contact-h4 {
+    margin: 0.5rem 0 1rem 0;
+    font-family: 'Cabin Sketch', cursive; 
+}
+
+.contact-h4 > span { color: rgb(167, 1, 1); }
+
+.contact-reminder {
+    margin: auto;
+    font-size: 0.8rem;
+    width: 60vw;
+}
+
+.contact-icons {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#contact-alt { padding-bottom: 3rem; }

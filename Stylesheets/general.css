@@ -8,11 +8,14 @@ html { font-family: 'Cabin', sans-serif;
 
 /* General link, icon/button:hover settings */ 
 a { text-decoration: none; color: #3c3c3c; }
-i, button { cursor: pointer; color: #3c3c3c; }
-i:hover { color: rgb(108, 168, 202); }
+i, button, #send-form-button { cursor: pointer; color: #3c3c3c; }
+i:hover { color: rgb(108, 168, 202); transform:scale(1.25); transition: ease-in-out 0.25s;}
 header i:hover { color: white; }
 #toggle-menu a:hover, header a:hover { background-color: rgba(137, 184, 212, 0.377); }
 button { font-family: 'Cabin Condensed', sans-serif; }
+button:hover { color: #3c3c3c; }
+.portfo-button:hover, #send-form-button:hover { color: white; background-color: #3c3c3c; transition: 0.5s ease-in-out;
+}
 
 /* Reusable classes */
 .flex { display: flex; }

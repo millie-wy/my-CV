@@ -1,0 +1,74 @@
+#home { overflow: hidden;}
+
+.bg {
+    width: 100%;
+    min-height: 55rem;
+    opacity: 0.75;
+    margin-top: -20px;
+    margin-bottom: -200px;
+    z-index: -99;
+}
+
+.credit {
+    opacity: 0.6;
+    bottom: 2px;
+    left: 2px;
+    font-size: 0.5rem;
+    color: white;
+    z-index: 1;
+}
+
+#intro {
+    background: rgba(255,255,255,0.45);
+    border: 0.3rem solid rgb(60,60,60);
+    border-radius: 1rem;
+    z-index: 1;
+    left: 50%;
+    top: 15rem;
+    transform: translateX(-50%);
+    width: 55%;
+    min-height: 200px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#intro > h1 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 2.5rem;
+    padding: 4.5rem 1rem 0.5rem 1rem;
+    text-transform: uppercase;
+}
+
+.intro-pic {
+    width: 12rem;
+    border-radius: 50%;
+    background-color: rgb(60,60,60);
+    border: 0.3rem solid rgb(60, 60, 60);
+    z-index: 1;
+    left: 50%;
+    top: -8rem;
+    transform: translateX(-50%);
+    pointer-events: none;
+}
+
+#intro > p { padding: 0rem 1rem 1rem 1rem; }
+#intro > a { padding: 0rem 0.8rem 0rem 0.8rem; }
+
+.blue-text {
+    font-weight: 700;
+    color: rgb(47, 119, 161);
+    -webkit-mask-image: linear-gradient(45deg, rgba(35, 62, 78, 0.6) 30%, rgba(34, 69, 90, 1) 50%, rgba(35, 62, 78, 0.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 1s linear infinite;
+}
+@keyframes shine {
+    from { -webkit-mask-position: 150%; }
+    to { -webkit-mask-position: -50%; }
+}
+
+h2 { 
+    font-family: 'Cabin Sketch', cursive; 
+    font-size: 2rem; 
+    padding: 2rem 0rem 2rem 0rem;
+    text-align: center;
+}
