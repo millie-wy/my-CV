@@ -1,4 +1,5 @@
 /* Extra large devices 1200px and up */
+
 @media (min-width: 1200px) {
     #section-home {
         overflow-y: hidden;
@@ -11,6 +12,7 @@
 }
 
 /* Small to medium devices 768px and below but no less than 600px */
+
 @media (max-width: 768px) {
 
     .bg {
@@ -31,10 +33,10 @@
     .self-intro-all { width: 85%; }
     #section-about { padding: 0 3rem 3rem 3rem; }
     #contact-form { width: 80vw; }
-
 }
 
 /* Extra small devices 600px and below */
+
 @media (max-width: 600px) {
     .bg {
         height: 45rem;

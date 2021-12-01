@@ -83,7 +83,7 @@ function updatePlanePosition() {
  * 
  */
 function shortenDescriptions() { 
-    let noOfCharac = 100;
+    let noOfCharac = 80;
     let descriptions = document.querySelectorAll('.portfo-description');
     descriptions.forEach(description => {
         if (description.textContent.length < noOfCharac) {

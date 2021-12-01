@@ -61,6 +61,7 @@
     -webkit-mask-size: 200%;
     animation: shine 1s linear infinite;
 }
+
 @keyframes shine {
     from { -webkit-mask-position: 150%; }
     to { -webkit-mask-position: -50%; }
