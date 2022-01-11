@@ -70,7 +70,7 @@
         <div class="self-intro-all">
             <h4 class="self-intro-line cabin-sketch">Hello! Hej! 您好! 🌍</h4></br>
             <p class="self-intro-line">I am from Hong Kong, where I was born, grew up and started my first career in administration. In 2021, I stepped out of my comfort zone, moved to Sweden and pursued an education / a hobby that I always wanted - <span class="blue-text">coding</span>.</p>
-            <p class="self-intro-line">I love travelling - have travelled alone to many different countries in Asia, Europe, and USA and even the North Pole. My curious and adventurous personality and life experience have made me very well adapted to different culture and environment :) </p></br>
+            <p class="self-intro-line">And as a travel enthusiast, I have travelled alone to many different countries in Asia, Europe, and USA and even the North Pole. My curious and adventurous personality and life experience have made me very well adapted to different culture and environment :) </p></br>
             <p class="self-intro-line">Except for the languages I am learning for programming, I also manage a few spoken languages: English, Cantonese, Marndarin and basic Swedish!</p>
         </div>
     </section>
@@ -79,7 +79,20 @@
             <h2 id="session-headers">MY PORTFOLIO</h2>
             <div id="portfo-cards" class="flex">
                 <div class="card text-c">
-                    <video width="252" autoplay loop muted playsinline>
+                    <video width="250" autoplay loop muted playsinline>
+                        <source src="./Media/Videos/my-calendar.webm" type="video/webm">
+                        <source src="./Media/Videos/my-calendar.mp4" type="video/mp4">
+                        Your browser does not support the audio element.
+                    </video>
+                    <div class="portfo-card-body flex flex-col text-c">
+                        <h4 class="portfo-header">My Calendar</h4>
+                        <p class="portfo-description">An online calendar with a todo list that allows you to create todo items for a specific date. The todos that you create will be stored in your browser's local storage. This project is a group assignment from my school, created together with Sara Lindqvist and Fia Andersson.</p>
+                        <button class="readmore-button" id="rm-b2">Read more ⇩</button>
+                        <button class="portfo-button" onclick=" window.open('https://github.com/millie-wy/calendar','_blank')">Github  <i class="portfo-icons fas fa-external-link-alt"></i></button>
+                    </div>
+                </div>
+                <div class="card text-c">
+                    <video width="250" autoplay loop muted playsinline>
                         <source src="./Media/Videos/millies portfolio.webm" type="video/webm">
                         <source src="./Media/Videos/millies portfolio.mp4" type="video/mp4">
                         Your browser does not support the audio element.
@@ -96,7 +109,7 @@
                         <source src="./Media/Videos/bank-robbery-adventure.webm" type="video/webm">
                         <source src="./Media/Videos/bank-robbery-adventure.mp4" type="video/mp4">
                         Your browser does not support the audio element.
-                    </video>
+                    </video> 
                     <div class="portfo-card-body flex flex-col text-c">
                         <h4 class="portfo-header">Minigame: Bank Robbery Adventure</h4>
                         <p class="portfo-description">A text-based mini adventure where you can experience becoming a beginner in robbery. In the game, your gang leader gives you the task of robbing a bank to show your ability and courage. 
