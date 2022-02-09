@@ -1,5 +1,5 @@
 # Millie Cheung's CV
-----
+
 (Svenska)
 Mitt första online-CV som innehåller en korta självintroduktion, en visning av mina projekt och mina kontaktuppgifter.
 
