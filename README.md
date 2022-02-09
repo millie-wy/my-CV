@@ -1,5 +1,4 @@
 # Millie Cheung's CV
-Wing Yan Cheung - FED21G 
 ----
 (Svenska)
 Mitt första online-CV som innehåller en korta självintroduktion, en visning av mina projekt och mina kontaktuppgifter.
