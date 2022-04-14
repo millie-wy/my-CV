@@ -1,201 +1,449 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Millie Cheung | Front-end Developer</title>
-    <link rel="icon" href="./Media/Images/m-tab.webp">
-    
-    <script src="https://kit.fontawesome.com/3809b5d93c.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;600&family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;600&display=swap" rel="stylesheet">    
-    <link rel="stylesheet" href="./Stylesheets/general.css">
-    <link rel="stylesheet" href="./Stylesheets/header.css">
-    <link rel="stylesheet" href="./Stylesheets/main-home.css">
-    <link rel="stylesheet" href="./Stylesheets/main-about.css">
-    <link rel="stylesheet" href="./Stylesheets/main-portfolio.css">
-    <link rel="stylesheet" href="./Stylesheets/main-contact.css">
-    <link rel="stylesheet" href="./Stylesheets/main-responsive-design.css">
-    <link rel="stylesheet" href="./Stylesheets/footer.css">
-    
+    <link rel="icon" href="./Media/Images/m-tab.webp" />
+
+    <script
+      src="https://kit.fontawesome.com/3809b5d93c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;600&family=Cabin+Sketch:wght@400;700&family=Cabin:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Stylesheets/general.css" />
+    <link rel="stylesheet" href="./Stylesheets/header.css" />
+    <link rel="stylesheet" href="./Stylesheets/main-home.css" />
+    <link rel="stylesheet" href="./Stylesheets/main-about.css" />
+    <link rel="stylesheet" href="./Stylesheets/main-portfolio.css" />
+    <link rel="stylesheet" href="./Stylesheets/main-contact.css" />
+    <link rel="stylesheet" href="./Stylesheets/main-responsive-design.css" />
+    <link rel="stylesheet" href="./Stylesheets/footer.css" />
+
     <script src="script.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header id="header" class="flex justify-c text-c">
-        <i id="hamburger-m" class="absolute fas fa-bars"></i>
-        <ul id="desktop-menu-list" class="flex-row flex">
-            <li class="header-links"><a href="#home">HOME</a></li>
-            <li class="header-links"><a href="#section-about">ABOUT</a></li>
-            <li class="header-links"><a href="#section-portfolio">PORTFOLIO</a></li>
-            <li class="header-links"><a href="#section-contact">CONTACT</a></li>
+      <i id="hamburger-m" class="absolute fas fa-bars"></i>
+      <ul id="desktop-menu-list" class="flex-row flex">
+        <li class="header-links"><a href="#home">HOME</a></li>
+        <li class="header-links"><a href="#section-about">ABOUT</a></li>
+        <li class="header-links"><a href="#section-portfolio">PORTFOLIO</a></li>
+        <li class="header-links"><a href="#section-contact">CONTACT</a></li>
+      </ul>
+      <div id="toggle-menu" class="absolute flex flex-col" style="height: 0%">
+        <ul id="toggle-menu-list" class="none">
+          <h3>MILLIE CHEUNG</h3>
+          <li class="t-header-links"><a href="#home">HOME</a></li>
+          <li class="t-header-links"><a href="#section-about">ABOUT</a></li>
+          <li class="t-header-links">
+            <a href="#section-portfolio">PORTFOLIO</a>
+          </li>
+          <li class="t-header-links"><a href="#section-contact">CONTACT</a></li>
         </ul>
-        <div id="toggle-menu" class="absolute flex flex-col" style="height: 0%">
-            <ul id="toggle-menu-list" class="none">
-                <h3>MILLIE CHEUNG</h3>
-                <li class="t-header-links"><a href="#home">HOME</a></li>
-                <li class="t-header-links"><a href="#section-about">ABOUT</a></li>
-                <li class="t-header-links"><a href="#section-portfolio">PORTFOLIO</a></li>
-                <li class="t-header-links"><a href="#section-contact">CONTACT</a></li>
-        </div>
+      </div>
     </header>
 
-    <section id="section-home" class="scroll-mt-2">
+    <main>
+      <section id="section-home" class="scroll-mt-2">
         <div id="home" class="relative">
-            <img class="bg" src="./Media/Images/bg.hk-1.webp" alt="background-hk">
-            <p class="credit absolute">Photo by Soda North from Pexels</p>
-            <div id="intro" class="absolute">
-                <img class="intro-pic absolute" src="https://raw.githubusercontent.com/millie-wy/my-CV/master/Media/Images/m.webp" alt="my photo">
-                <h1>Millie Cheung</h1>
-                <p>A <span class="blue-text">front-end developer student</span> based in Gothenburg, Sweden, with a strong passion for building things from scratch. I build webpages with a focus on responsive design and user experience.</p>
-                <p>Welcome to my first little world on the Internet!</p>
-                <a target=_blank href="https://www.linkedin.com/in/milliecheung/"><i class="fab fa-linkedin-in"></i></a>
-                <a target=_blank href="https://github.com/millie-wy"><i class="fab fa-github"></i></a>
-                <a target=_blank href="https://www.facebook.com/milliecheung/"><i class="fab fa-facebook"></i></a>
-                <a target=_blank href="mailto:wingyan.cheung@medieinstitutet.se"><i class="fas fa-envelope"></i></a>
-            </div>
+          <img
+            class="bg"
+            src="./Media/Images/bg.hk-1.webp"
+            alt="background-hk"
+          />
+          <p class="credit absolute">Photo by Soda North from Pexels</p>
+          <div id="intro" class="absolute">
+            <img
+              class="intro-pic absolute"
+              src="https://raw.githubusercontent.com/millie-wy/my-CV/master/Media/Images/m.webp"
+              alt="my photo"
+            />
+            <h1>Millie Cheung</h1>
+            <p>
+              A <span class="blue-text">front-end developer student</span> based
+              in Gothenburg, Sweden, with a strong passion for building things
+              from scratch. I build webpages with a focus on responsive design
+              and user experience.
+            </p>
+            <p>Welcome to my first little world on the Internet!</p>
+            <a target="_blank" href="https://www.linkedin.com/in/milliecheung/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a target="_blank" href="https://github.com/millie-wy"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a target="_blank" href="https://www.facebook.com/milliecheung/"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a target="_blank" href="mailto:wingyan.cheung@medieinstitutet.se"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section id="section-about" class="scroll-mt-2 text-c">
+      <section id="section-about" class="scroll-mt-2 text-c">
         <h2 id="session-headers">ABOUT ME</h2>
         <div class="plane-flying flex flex-row justify-c">
-            <div class="flags">🇭🇰</div>
-            <div id="plane">
-                <img id="plane-pic" src="./Media/Images/plane.webp" alt="plane" height="40px">
-            </div>
-            <div class="flags">🇸🇪</div>
+          <div class="flags">🇭🇰</div>
+          <div id="plane">
+            <img
+              id="plane-pic"
+              src="./Media/Images/plane.webp"
+              alt="plane"
+              height="40px"
+            />
+          </div>
+          <div class="flags">🇸🇪</div>
         </div>
         <div class="self-intro-all">
-            <h4 class="self-intro-line cabin-sketch">Hello! Hej! 您好! 🌍</h4></br>
-            <p class="self-intro-line">I am from Hong Kong, where I was born, grew up and started my first career in administration. In 2021, I stepped out of my comfort zone, moved to Sweden and pursued an education / a hobby that I always wanted - <span class="blue-text">coding</span>.</p>
-            <p class="self-intro-line">And as a travel enthusiast, I have travelled alone to many different countries in Asia, Europe, and USA and even the North Pole. My curious and adventurous personality and life experience have made me very well adapted to different culture and environment :) </p></br>
-            <p class="self-intro-line">Except for the languages I am learning for programming, I also manage a few spoken languages: English, Cantonese, Marndarin and basic Swedish!</p>
+          <h4 class="self-intro-line cabin-sketch">
+            Hello! Hej! 您好! 🌍 <br />
+          </h4>
+          <p class="self-intro-line">
+            I am from Hong Kong, where I was born, grew up and started my first
+            career in administration. In 2021, I stepped out of my comfort zone,
+            moved to Sweden and pursued an education / a hobby that I always
+            wanted - <span class="blue-text">coding</span>.
+          </p>
+          <p class="self-intro-line">
+            And as a travel enthusiast, I have travelled alone to many different
+            countries in Asia, Europe, and USA and even the North Pole. My
+            curious and adventurous personality and life experience have made me
+            very well adapted to different culture and environment :)<br />
+          </p>
+          <p class="self-intro-line">
+            Except for the languages I am learning for programming, I also
+            manage a few spoken languages: English, Cantonese, Marndarin and
+            basic Swedish!
+          </p>
         </div>
-    </section>
+      </section>
 
-    <section id="section-portfolio" class="scroll-mt-2">
-            <h2 id="session-headers">MY PORTFOLIO</h2>
-            <div id="portfo-cards" class="flex">
-                <div class="card text-c">
-                    <video width="250" autoplay loop muted playsinline>
-                        <source src="./Media/Videos/calculator.webm" type="video/webm">
-                        <source src="./Media/Videos/calculator.mp4" type="video/mp4">
-                        Your browser does not support the audio element.
-                    </video>
-                    <div class="portfo-card-body flex flex-col text-c">
-                        <h4 class="portfo-header">Calculator</h4>
-                        <p class="portfo-description">My first tiny hobby project - a calculator that handles simple calculation as addition, subtraction, multiplication and division. This app is writted by TypeScript with no external libraries or frameworks.</p>
-                        <button class="readmore-button" id="rm-b2">Read more ⇩</button>
-                        <button class="portfo-button" onclick=" window.open('https://github.com/millie-wy/Tool_Calculator','_blank')">Github  <i class="portfo-icons fas fa-external-link-alt"></i></button>
-                    </div>
-                </div>
-                <div class="card text-c">
-                    <video width="250" autoplay loop muted playsinline>
-                        <source src="./Media/Videos/rocket-journey.webm" type="video/webm">
-                        <source src="./Media/Videos/rocket-journey.mp4" type="video/mp4">
-                        Your browser does not support the audio element.
-                    </video>
-                    <div class="portfo-card-body flex flex-col text-c">
-                        <h4 class="portfo-header">Game: Rocket Journey</h4>
-                        <p class="portfo-description">An interstellar exploration game created with TypeScript and p5.js by me and my four classmates Erik Isaksson, Olivia Isberg, Jannie Bäckman Kuurne and Emil Hagelin. We created also all the graphics in this game.</p>
-                        <button class="readmore-button" id="rm-b2">Read more ⇩</button>
-                        <button class="portfo-button" onclick=" window.open('https://github.com/millie-wy/Game_Rocket-Journey','_blank')">Github  <i class="portfo-icons fas fa-external-link-alt"></i></button>
-                    </div>
-                </div>
-                <div class="card text-c">
-                    <video width="250" autoplay loop muted playsinline>
-                        <source src="./Media/Videos/my-calendar.webm" type="video/webm">
-                        <source src="./Media/Videos/my-calendar.mp4" type="video/mp4">
-                        Your browser does not support the audio element.
-                    </video>
-                    <div class="portfo-card-body flex flex-col text-c">
-                        <h4 class="portfo-header">My Calendar</h4>
-                        <p class="portfo-description">An online calendar with a todo list that allows you to create todo items for a specific date. The todos that you create will be stored in your browser's local storage. This project is a group assignment from my school, created together with Sara Lindqvist and Fia Andersson.</p>
-                        <button class="readmore-button" id="rm-b2">Read more ⇩</button>
-                        <button class="portfo-button" onclick=" window.open('https://github.com/millie-wy/Tool_Calendar','_blank')">Github  <i class="portfo-icons fas fa-external-link-alt"></i></button>
-                    </div>
-                </div>
-                <div class="card text-c">
-                    <video width="250" autoplay loop muted playsinline>
-                        <source src="./Media/Videos/millies portfolio.webm" type="video/webm">
-                        <source src="./Media/Videos/millies portfolio.mp4" type="video/mp4">
-                        Your browser does not support the audio element.
-                    </video>
-                    <div class="portfo-card-body flex flex-col text-c">
-                        <h4 class="portfo-header">Millie Cheung | Front-end Developer</h4>
-                        <p class="portfo-description">My first interactive CV (or portfolio) that is published on the Internet, which is the same page you are on now. In this little cozy place you can get to know about me and my works, as well as find my social media.</p>
-                        <button class="readmore-button" id="rm-b2">Read more ⇩</button>
-                        <button class="portfo-button" onclick=" window.open('https://github.com/millie-wy/my-CV','_blank')">Github  <i class="portfo-icons fas fa-external-link-alt"></i></button>
-                    </div>
-                </div>
-                <div class="card text-c">
-                    <video width="250" autoplay loop muted playsinline>
-                        <source src="./Media/Videos/bank-robbery-adventure.webm" type="video/webm">
-                        <source src="./Media/Videos/bank-robbery-adventure.mp4" type="video/mp4">
-                        Your browser does not support the audio element.
-                    </video> 
-                    <div class="portfo-card-body flex flex-col text-c">
-                        <h4 class="portfo-header">Minigame: Bank Robbery Adventure</h4>
-                        <p class="portfo-description">A text-based mini adventure where you can experience becoming a beginner in robbery. In the game, your gang leader gives you the task of robbing a bank to show your ability and courage. 
-                            This project is an individual assignment from my school.</span></p>
-                        <button class="readmore-button" id="rm-b1">Read more ⇩</button>
-                        <button class="portfo-button" onclick="window.open('https://github.com/millie-wy/Game_Bank-Robbery-Adventure','_blank')">Github <i class="portfo-icons fas fa-external-link-alt"></i></button>
-                    </div>
-                </div>
-                <div class="card text-c">
-                    <div class="coming-soon flex flex-col justify-c">
-                        Coming soon...
-                    </div>
-                    <div class="portfo-card-body flex flex-col text-c">
-                        <h4 class="portfo-header">Coming soon...</h4>
-                        <p class="portfo-description">I am still thinking what to make as my first hobby project. Your ideas are welcome, so text me and give me some inspiration!</p>
-                        <button class="readmore-button" id="rm-b3">Read more ⇩</button>
-                        <button class="portfo-button button-hidden">Visit  <i class="portfo-icons fas fa-external-link-alt"></i></button>
-                    </div>
-                </div>
+      <section id="section-portfolio" class="scroll-mt-2">
+        <h2 id="session-headers">MY PORTFOLIO</h2>
+        <div id="portfo-cards" class="flex">
+          <div class="card text-c">
+            <video width="250" autoplay loop muted playsinline>
+              <source
+                src="./Media/Videos/american-diner-menu.webm"
+                type="video/webm"
+              />
+              <source
+                src="./Media/Videos/american-diner-menu.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the audio element.
+            </video>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">REST-API - American Diner Menu</h4>
+              <p class="portfo-description">
+                A mocked American Diner menu with a REST-API created with NodeJS
+                and Express. <br />The API has 5 endpoints (2 GETs, POST, PUT
+                and DELETE) using JSON format for transporting the data, adding
+                new items and also fetching, updating and deleting a specific
+                item. The client side was written with React / JavaScript.
+              </p>
+              <button class="readmore-button" id="rm-b2">Read more ⇩</button>
+              <button
+                class="portfo-button"
+                onclick=" window.open('https://github.com/millie-wy/REST-API_American-Diner-Menu','_blank')"
+              >
+                Github <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
             </div>
-            <div id="request-resume" class="text-c">
-                <h4><span class="text-effect-hover"> If you are an <span class="blue-text">employer</span> and want know more about me, please feel free to contact me for a copy of my resume or check out my Linkedin. <br>
-                    For <span class="blue-text">new friends</span>, of course you are welcome to message me about coding! </span>
-                </h4>
+          </div>
+          <div class="card text-c">
+            <video width="250" autoplay loop muted playsinline>
+              <source src="./Media/Videos/webshop-cc.webm" type="video/webm" />
+              <source src="./Media/Videos/webshop-cc.mp4" type="video/mp4" />
+              Your browser does not support the audio element.
+            </video>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">Webshop - comme ci comme ça</h4>
+              <p class="portfo-description">
+                A fully functional mocked webshop which the user can place order
+                just as on a real webshop. We considered both the functionality
+                and user experience in this project so there are a lot of small
+                details you can discover. The webshop has also an admin page
+                where allows the "admin" to add, remove and even edit the
+                products. This project was built with React / TypeScript with
+                Material UI.
+              </p>
+              <button class="readmore-button" id="rm-b2">Read more ⇩</button>
+              <button
+                class="portfo-button"
+                onclick=" window.open('https://github.com/millie-wy/Webshop_comme-ci-comme--a','_blank')"
+              >
+                Github <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
             </div>
-    </section>
+          </div>
 
-    <section id="section-contact" class="text-c scroll-mt-2">
-            <h2 id="session-headers">CONTACT ME</h2>
-            <h4 class="contact-h4">Send me a message<br><span>* Note the limitation of the form, see the checkbox below *</span></h4>
-            <form id="contact-form" class="flex flex-col justify-c" action="mailto:wingyan.cheung@medieinstitutet.se" target="_blank" method="post" enctype="text/plain">
-                <div id="form-name-and-email" class="flex flex-row">
-                    <div class="w-48 flex flex-col">
-                        <label class="form-label" for="name">Name *</label>
-                        <input class="form-input" type="name" id="form-name" name="name" required>
-                    </div>
-                    <div class="w-48 flex flex-col">
-                        <label class="form-label" for="organisation">Organisation</label>
-                        <input class="form-input" type="text" id="form-org" name="organisation">
-                    </div>
-                </div>
-                <label class="form-label"for="email">Email *</label>
-                <input class="form-input" type="email" id="form-email" name="email" required>
-                <label class="form-label" for="subject">Subject *</label>
-                <input id="f-subject" class="form-input" type="text" id="form-subject" name="subject" required>
-                <label class="form-label" for="message">Message *</label>
-                <textarea id="f-message" class="form-textarea"  type="text" id="form-message" name="message" rows="4" required></textarea>
-                <div class="flex flex-row">
-                    <input type="checkbox" name="form-disclaimer" class="form-checkbox" required>
-                    <label for="form-disclaimer" class="form-disclaimer">I understand that the form is not fully functional right now, and I know that I will be directed to my default mailbox and I am required to click 'Send' there in order to send this message. :-)</label>
-                </div>
-                <input id="send-form-button" type="submit" value="Send">
-            </form>
-            <div id="contact-alt">
-                <h4 class="contact-h4">Or get in touch with me on</h4>
-                <a target=_blank href="https://www.linkedin.com/in/milliecheung/"><i class="contact-icons fab fa-linkedin-in"></i></a>
-                <a target=_blank href="https://github.com/millie-wy"><i class="contact-icons fab fa-github"></i></a>
-                <a target=_blank href="https://www.facebook.com/milliecheung/"><i class="contact-icons fab fa-facebook"></i></a>
+          <div class="card text-c">
+            <video width="250" autoplay loop muted playsinline>
+              <source src="./Media/Videos/calculator.webm" type="video/webm" />
+              <source src="./Media/Videos/calculator.mp4" type="video/mp4" />
+              Your browser does not support the audio element.
+            </video>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">Calculator</h4>
+              <p class="portfo-description">
+                My first tiny hobby project - a calculator that handles simple
+                calculation as addition, subtraction, multiplication and
+                division. This app is writted by TypeScript with no external
+                libraries or frameworks.
+              </p>
+              <button class="readmore-button" id="rm-b2">Read more ⇩</button>
+              <button
+                class="portfo-button"
+                onclick=" window.open('https://github.com/millie-wy/Tool_Calculator','_blank')"
+              >
+                Github <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
             </div>
-    </section>
+          </div>
+          <div class="card text-c">
+            <video width="250" autoplay loop muted playsinline>
+              <source
+                src="./Media/Videos/rocket-journey.webm"
+                type="video/webm"
+              />
+              <source
+                src="./Media/Videos/rocket-journey.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the audio element.
+            </video>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">Game: Rocket Journey</h4>
+              <p class="portfo-description">
+                An interstellar exploration game created with TypeScript and
+                p5.js by me and my four classmates Erik Isaksson, Olivia Isberg,
+                Jannie Bäckman Kuurne and Emil Hagelin. We created also all the
+                graphics in this game.
+              </p>
+              <button class="readmore-button" id="rm-b2">Read more ⇩</button>
+              <button
+                class="portfo-button"
+                onclick=" window.open('https://github.com/millie-wy/Game_Rocket-Journey','_blank')"
+              >
+                Github <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card text-c">
+            <video width="250" autoplay loop muted playsinline>
+              <source src="./Media/Videos/my-calendar.webm" type="video/webm" />
+              <source src="./Media/Videos/my-calendar.mp4" type="video/mp4" />
+              Your browser does not support the audio element.
+            </video>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">My Calendar</h4>
+              <p class="portfo-description">
+                An online calendar with a todo list that allows you to create
+                todo items for a specific date. The todos that you create will
+                be stored in your browser's local storage. This project is a
+                group assignment from my school, created together with Sara
+                Lindqvist and Fia Andersson.
+              </p>
+              <button class="readmore-button" id="rm-b2">Read more ⇩</button>
+              <button
+                class="portfo-button"
+                onclick=" window.open('https://github.com/millie-wy/Tool_Calendar','_blank')"
+              >
+                Github <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card text-c">
+            <video width="250" autoplay loop muted playsinline>
+              <source
+                src="./Media/Videos/millies-portfolio.webm"
+                type="video/webm"
+              />
+              <source
+                src="./Media/Videos/millies-portfolio.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the audio element.
+            </video>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">Millie Cheung | Front-end Developer</h4>
+              <p class="portfo-description">
+                My first interactive CV (or portfolio) that is published on the
+                Internet, which is the same page you are on now. In this little
+                cozy place you can get to know about me and my works, as well as
+                find my social media.
+              </p>
+              <button class="readmore-button" id="rm-b2">Read more ⇩</button>
+              <button
+                class="portfo-button"
+                onclick=" window.open('https://github.com/millie-wy/my-CV','_blank')"
+              >
+                Github <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card text-c">
+            <video width="250" autoplay loop muted playsinline>
+              <source
+                src="./Media/Videos/bank-robbery-adventure.webm"
+                type="video/webm"
+              />
+              <source
+                src="./Media/Videos/bank-robbery-adventure.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the audio element.
+            </video>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">Minigame: Bank Robbery Adventure</h4>
+              <p class="portfo-description">
+                A text-based mini adventure where you can experience becoming a
+                beginner in robbery. In the game, your gang leader gives you the
+                task of robbing a bank to show your ability and courage. This
+                project is an individual assignment from my school.
+              </p>
+              <button class="readmore-button" id="rm-b1">Read more ⇩</button>
+              <button
+                class="portfo-button"
+                onclick="window.open('https://github.com/millie-wy/Game_Bank-Robbery-Adventure','_blank')"
+              >
+                Github <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card text-c">
+            <div class="coming-soon flex flex-col justify-c">
+              Coming soon...
+            </div>
+            <div class="portfo-card-body flex flex-col text-c">
+              <h4 class="portfo-header">Coming soon...</h4>
+              <p class="portfo-description">
+                This is reserved for my next hobby project. Your ideas and
+                inspiration are most welcome!
+              </p>
+              <button class="readmore-button" id="rm-b3">Read more ⇩</button>
+              <button class="portfo-button button-hidden">
+                Visit <i class="portfo-icons fas fa-external-link-alt"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="request-resume" class="text-c">
+          <h4>
+            <span class="text-effect-hover">
+              If you are an <span class="blue-text">employer</span> and want
+              know more about me, please feel free to contact me for a copy of
+              my resume or check out my Linkedin. <br />
+              For <span class="blue-text">new friends</span>, of course you are
+              welcome to message me about coding!
+            </span>
+          </h4>
+        </div>
+      </section>
+
+      <section id="section-contact" class="text-c scroll-mt-2">
+        <h2 id="session-headers">CONTACT ME</h2>
+        <h4 class="contact-h4">
+          Send me a message<br /><span
+            >* Note the limitation of the form, see the checkbox below *</span
+          >
+        </h4>
+        <form
+          id="contact-form"
+          class="flex flex-col justify-c"
+          action="mailto:wingyan.cheung@medieinstitutet.se"
+          target="_blank"
+          method="post"
+          enctype="text/plain"
+        >
+          <div id="form-name-and-email" class="flex flex-row">
+            <div class="w-48 flex flex-col">
+              <label class="form-label" for="name">Name *</label>
+              <input
+                class="form-input"
+                type="name"
+                id="form-name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="w-48 flex flex-col">
+              <label class="form-label" for="organisation">Organisation</label>
+              <input
+                class="form-input"
+                type="text"
+                id="form-org"
+                name="organisation"
+              />
+            </div>
+          </div>
+          <label class="form-label" for="email">Email *</label>
+          <input
+            class="form-input"
+            type="email"
+            id="form-email"
+            name="email"
+            required
+          />
+          <label class="form-label" for="subject">Subject *</label>
+          <input
+            id="f-subject"
+            class="form-input"
+            type="text"
+            id="form-subject"
+            name="subject"
+            required
+          />
+          <label class="form-label" for="message">Message *</label>
+          <textarea
+            id="f-message"
+            class="form-textarea"
+            type="text"
+            id="form-message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+          <div class="flex flex-row">
+            <input
+              type="checkbox"
+              name="form-disclaimer"
+              class="form-checkbox"
+              required
+            />
+            <label for="form-disclaimer" class="form-disclaimer"
+              >I understand that the form is not fully functional right now, and
+              I know that I will be directed to my default mailbox and I am
+              required to click 'Send' there in order to send this message.
+              :-)</label
+            >
+          </div>
+          <input id="send-form-button" type="submit" value="Send" />
+        </form>
+        <div id="contact-alt">
+          <h4 class="contact-h4">Or get in touch with me on</h4>
+          <a target="_blank" href="https://www.linkedin.com/in/milliecheung/"
+            ><i class="contact-icons fab fa-linkedin-in"></i
+          ></a>
+          <a target="_blank" href="https://github.com/millie-wy"
+            ><i class="contact-icons fab fa-github"></i
+          ></a>
+          <a target="_blank" href="https://www.facebook.com/milliecheung/"
+            ><i class="contact-icons fab fa-facebook"></i
+          ></a>
+        </div>
+      </section>
+    </main>
     <footer>Millie Cheung &#169; 2022. All rights reserved.</footer>
-</body>
+  </body>
 </html>
